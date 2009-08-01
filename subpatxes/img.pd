@@ -1,0 +1,49 @@
+#N canvas 0 0 450 300 10;
+#N canvas 0 0 450 300 img 0;
+#X obj 218 124 pdp_imgloader;
+#X obj 101 100 cnv 15 100 60 empty empty Img 20 12 0 54 -159808 -228856
+0;
+#X floatatom 241 73 5 0 0 0 - - -;
+#X text 241 55 X Offset;
+#X floatatom 299 73 5 0 0 0 - - -;
+#X text 299 55 Y Offset;
+#X obj 365 73 hsl 128 15 0 1 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X text 364 56 Blending factor;
+#X obj 196 -9 openpanel;
+#X obj 112 112 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 250 27 clear;
+#X msg 196 15 load \$1 64 32;
+#X obj 59 -14 inlet;
+#X obj 59 201 outlet;
+#X obj 101 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 101 150 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X floatatom 136 124 3 0 0 0 - - -;
+#X floatatom 156 134 3 0 0 0 - - -;
+#X obj 129 151 hsl 64 8 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 125 108 file;
+#X text 161 123 X;
+#X text 180 136 Y;
+#X connect 0 0 13 0;
+#X connect 2 0 0 1;
+#X connect 4 0 0 2;
+#X connect 6 0 0 3;
+#X connect 8 0 11 0;
+#X connect 9 0 8 0;
+#X connect 10 0 0 0;
+#X connect 11 0 0 0;
+#X connect 12 0 0 0;
+#X connect 16 0 2 0;
+#X connect 17 0 4 0;
+#X connect 18 0 6 0;
+#X coords 0 -1 1 1 102 60 1 100 100;
+#X restore 100 101 pd img;
+#X obj 69 -4 inlet;
+#X obj 69 211 outlet;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X coords 0 -1 1 1 102 62 1 100 100;

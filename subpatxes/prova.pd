@@ -1,0 +1,4 @@
+#N canvas 0 0 450 300 10;
+#X obj 136 137 s pd-prova.pd;
+#X msg 173 73 obj 300 10 v4l;
+#X connect 1 0 0 0;

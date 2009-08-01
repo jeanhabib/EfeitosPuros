@@ -1,0 +1,91 @@
+#N canvas 0 0 450 300 10;
+#X obj 233 107 hdl 15 1 0 10 empty empty empty 0 -6 0 8 -262144 -1
+-1 0;
+#X floatatom 251 133 5 0 0 0 - - -;
+#X floatatom 267 157 5 0 0 0 - - -;
+#X floatatom 310 224 5 0 0 0 - - -;
+#X floatatom 328 244 5 0 0 0 - - -;
+#X floatatom 348 264 5 0 0 0 - - -;
+#X text 358 223 R component;
+#X text 376 243 G component;
+#X text 396 263 B component;
+#X msg 43 97 clear;
+#X msg 44 132 delete 1;
+#X msg 44 166 resize 20;
+#X text 393 106 Select current form ( 10 items by default );
+#X text 296 132 X1 coordinate;
+#X text 315 156 Y1 coordinate;
+#X floatatom 280 179 5 0 0 0 - - -;
+#X floatatom 288 201 5 0 0 0 - - -;
+#X text 328 27 Add a line;
+#X text 432 78 Add an ellipse;
+#X msg 217 27 line 24 56 134 200;
+#X text 421 50 Add a rectangle ( but in red );
+#X text 325 178 X2 coordinate or ray for ellipse;
+#X text 336 200 Y2 coordinate or ray for ellipse;
+#X text 221 5 line|rectangle|ellipse x1 y1 x2|r y2|r [ r g b angle
+];
+#X msg 236 49 rectangle 56 45 123 78 255 0 0;
+#X msg 252 78 ellipse 89 120 56 78 0 255 0;
+#X obj 158 307 pdp_form -----------------;
+#X obj 390 285 hsl 128 15 0 1 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X text 501 285 alpha ( global );
+#X obj 7 23 inlet;
+#X obj 25 366 outlet;
+#X obj 101 101 cnv 15 100 60 empty empty Form 20 24 0 34 -183865 -66577
+0;
+#X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 101 152 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 197 77 loadbang;
+#X floatatom 114 120 5 0 0 0 - - -;
+#X floatatom 114 137 5 0 0 0 - - -;
+#X floatatom 148 121 5 0 0 0 - - -;
+#X floatatom 148 137 5 0 0 0 - - -;
+#X obj 46 25 inlet;
+#X obj 84 25 inlet;
+#X obj 126 25 inlet;
+#X obj 164 25 inlet;
+#X obj 128 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 148 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 168 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 191 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 54 75 + 100;
+#X obj 128 68 + 50;
+#X connect 0 0 26 1;
+#X connect 1 0 26 2;
+#X connect 2 0 26 3;
+#X connect 3 0 26 6;
+#X connect 4 0 26 7;
+#X connect 5 0 26 8;
+#X connect 9 0 26 0;
+#X connect 10 0 26 0;
+#X connect 11 0 26 0;
+#X connect 15 0 26 4;
+#X connect 16 0 26 5;
+#X connect 19 0 26 0;
+#X connect 24 0 26 0;
+#X connect 25 0 26 0;
+#X connect 26 0 30 0;
+#X connect 27 0 26 9;
+#X connect 29 0 26 0;
+#X connect 34 0 25 0;
+#X connect 35 0 1 0;
+#X connect 36 0 15 0;
+#X connect 37 0 2 0;
+#X connect 38 0 16 0;
+#X connect 39 0 35 0;
+#X connect 39 0 47 0;
+#X connect 40 0 37 0;
+#X connect 40 0 48 0;
+#X connect 41 0 36 0;
+#X connect 42 0 38 0;
+#X connect 47 0 36 0;
+#X connect 48 0 38 0;
+#X coords 0 -1 1 1 102 62 1 100 100;

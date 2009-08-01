@@ -1,0 +1,50 @@
+#N canvas 0 0 450 300 10;
+#N canvas 0 0 450 300 noise 0;
+#X obj 123 219 pdp_noise;
+#X obj 123 170 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 251 92 dim 320 240;
+#X msg 251 119 type grey;
+#X msg 251 142 type yv12;
+#X msg 251 173 seed 123;
+#X obj 101 101 cnv 15 100 60 empty empty Noise 20 12 0 42 -233431 -191407
+0;
+#X obj 158 118 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 177 117 B/W;
+#X obj 123 269 outlet;
+#X obj 100 152 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 44 171 metro 100;
+#X obj 119 134 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 135 134 start;
+#X obj 157 47 inlet;
+#X obj 167 57 inlet;
+#X obj 350 138 sel 0 1;
+#X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 191 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X connect 0 0 9 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 7 0 16 0;
+#X connect 11 0 1 0;
+#X connect 12 0 11 0;
+#X connect 14 0 12 0;
+#X connect 15 0 7 0;
+#X connect 16 0 3 0;
+#X connect 16 1 4 0;
+#X coords 0 -1 1 1 102 62 1 100 100;
+#X restore 100 100 pd noise;
+#X obj 92 61 inlet;
+#X obj 164 54 inlet;
+#X obj 101 239 outlet;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X coords 0 -1 1 1 102 62 1 100 100;

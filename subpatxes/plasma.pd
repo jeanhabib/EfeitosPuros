@@ -1,0 +1,57 @@
+#N canvas 0 0 450 300 10;
+#N canvas 0 0 450 300 plasma 0;
+#X obj 101 101 cnv 15 100 60 empty empty Plasma 20 12 0 48 -98944 -228856
+0;
+#X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 191 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 101 151 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 59 156 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 224 81 dim 320 240;
+#X text 320 81 set packet dimensions;
+#X msg 224 108 type grey;
+#X msg 224 131 type yv12;
+#X text 320 110 generate greyscale;
+#X text 320 129 generate colour (default);
+#X msg 224 162 seed 123;
+#X text 320 162 set seed value;
+#X text 217 31 pdp_noise creates a random image (with uniform distribution
+between -1 and 1) when a bang is received;
+#X obj 96 208 pdp_plasma;
+#X floatatom 159 120 5 0 0 0 - - -;
+#X text 320 186 turbulence;
+#X obj 96 251 pdp_reg;
+#X obj 163 231 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 49 264 outlet;
+#X obj 72 47 inlet;
+#X obj 134 52 inlet;
+#X obj 36 119 metro 100;
+#X obj 110 120 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 116 134 ON-OFF;
+#X connect 4 0 14 0;
+#X connect 5 0 14 0;
+#X connect 7 0 14 0;
+#X connect 8 0 14 0;
+#X connect 11 0 14 0;
+#X connect 14 0 17 0;
+#X connect 15 0 14 1;
+#X connect 17 0 19 0;
+#X connect 18 0 17 0;
+#X connect 20 0 23 0;
+#X connect 21 0 15 0;
+#X connect 22 0 4 0;
+#X connect 23 0 22 0;
+#X coords 0 -1 1 1 102 62 1 100 100;
+#X restore 100 100 pd plasma;
+#X obj 100 71 inlet;
+#X obj 190 81 inlet;
+#X obj 111 186 outlet;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X coords 0 -1 1 1 102 62 1 100 100;

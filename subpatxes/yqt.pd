@@ -1,0 +1,89 @@
+#N canvas 0 0 450 300 10;
+#N canvas 0 0 450 300 yqt 0;
+#X obj 101 101 cnv 15 100 60 empty empty yQT 20 12 0 48 -135263 -228856
+0;
+#X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 147 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 191 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 101 151 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X msg 63 246 loop \$1;
+#X obj 154 144 tgl 15 0 empty empty empty 20 8 0 8 -262144 -1 -1 0
+1;
+#X msg 310 154 open \$1;
+#X obj 309 130 openpanel;
+#X obj 132 111 bng 15 250 50 0 empty empty empty 20 8 0 8 -262144 -1
+-1;
+#X floatatom 256 209 5 0 0 0 - - -;
+#X obj 263 178 hsl 300 15 0 1000 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X obj 197 245 metro 70;
+#X obj 498 382 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 498 434 pdp_control;
+#X msg 498 407 thread \$1;
+#X floatatom 498 495 5 0 0 0 - - -;
+#X obj 498 466 route pdp_drop;
+#X floatatom 101 120 5 0 0 0 - - -;
+#X floatatom 237 417 5 0 0 0 - - -;
+#X text 257 392 Number of frames decoded;
+#X text 286 416 Total number of frames;
+#X floatatom 257 274 5 0 0 0 - - -;
+#X text 308 274 Frame command;
+#X obj 256 293 t b f;
+#X obj 260 369 dac~;
+#X text 21 470 pdp_yqt : quicktime movie reader with audio support
+;
+#X text 22 502 with big plundering from pdp_qt ( Tom Schouten );
+#X text 21 486 written by Yves Degoyon;
+#X floatatom 114 141 3 0 0 0 - - -;
+#X text 317 441 Frame rate;
+#X obj 165 333 pdp_yqt ----------;
+#X obj 143 127 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 56 20 inlet;
+#X obj 96 20 inlet;
+#X obj 136 20 inlet;
+#X text 160 125 on-off;
+#X text 173 143 loop;
+#X obj 82 366 outlet;
+#X text 149 111 dialog;
+#X connect 5 0 31 0;
+#X connect 6 0 5 0;
+#X connect 7 0 31 0;
+#X connect 8 0 7 0;
+#X connect 9 0 8 0;
+#X connect 10 0 12 1;
+#X connect 11 0 10 0;
+#X connect 12 0 31 0;
+#X connect 13 0 15 0;
+#X connect 14 0 17 0;
+#X connect 15 0 14 0;
+#X connect 17 0 16 0;
+#X connect 22 0 24 0;
+#X connect 24 0 31 0;
+#X connect 24 1 31 1;
+#X connect 31 0 38 0;
+#X connect 31 1 18 0;
+#X connect 31 2 19 0;
+#X connect 31 3 29 0;
+#X connect 31 4 25 0;
+#X connect 31 5 25 1;
+#X connect 32 0 12 0;
+#X connect 33 0 9 0;
+#X connect 34 0 32 0;
+#X connect 35 0 6 0;
+#X coords 0 -1 1 1 102 62 1 100 100;
+#X restore 100 100 pd yqt;
+#X obj 89 45 inlet;
+#X obj 147 48 inlet;
+#X obj 196 56 inlet;
+#X obj 121 236 outlet;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;
+#X coords 0 -1 1 1 102 62 1 100 100;
