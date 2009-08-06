@@ -1,0 +1,37 @@
+#N canvas 0 0 450 300 10;
+#X obj 12 190 pdp_cycle;
+#X obj 12 41 inlet;
+#X obj 21 222 outlet;
+#X obj 101 101 cnv 15 100 60 empty empty Cycle 20 30 0 42 -232576 -203904
+0;
+#X obj 105 107 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 105 125 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 105 143 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 22 51 inlet;
+#X obj 32 61 inlet;
+#X obj 42 71 inlet;
+#X obj 192 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 100 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 130 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 160 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 101 151 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X text 119 142 V;
+#X text 119 125 U;
+#X text 119 108 Y;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 4 0 0 1;
+#X connect 5 0 0 2;
+#X connect 6 0 0 3;
+#X connect 7 0 4 0;
+#X connect 8 0 5 0;
+#X connect 9 0 6 0;
+#X coords 0 -1 1 1 102 62 1 100 100;

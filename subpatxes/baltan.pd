@@ -1,0 +1,23 @@
+#N canvas 0 0 450 300 10;
+#X obj 101 101 cnv 15 100 60 empty empty Baltan 20 30 0 42 -258016
+-203904 0;
+#X obj 7 112 pdp_baltan;
+#X obj 7 24 inlet;
+#X obj 7 176 outlet;
+#X floatatom 110 125 10 0 0 0 - - -;
+#X msg 84 48 1.65798e+07;
+#X obj 104 18 loadbang;
+#X obj 192 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 100 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 100 152 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 224 84 inlet;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 4 0 1 1;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 10 0 4 0;
+#X coords 0 -1 1 1 102 62 1 100 100;

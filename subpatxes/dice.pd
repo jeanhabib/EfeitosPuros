@@ -1,0 +1,19 @@
+#N canvas 0 0 450 300 10;
+#X obj 39 72 inlet;
+#X obj 35 106 pdp_dice;
+#X obj 35 251 outlet;
+#X obj 101 101 cnv 15 100 60 empty empty Dice 20 30 0 54 -55857 -228856
+0;
+#X floatatom 143 132 3 0 0 0 - - -;
+#X obj 100 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 100 152 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 192 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 209 52 inlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 4 0 1 1;
+#X connect 8 0 4 0;
+#X coords 0 -1 1 1 102 62 1 100 100;

@@ -1,0 +1,55 @@
+#N canvas 0 0 450 300 10;
+#X obj 27 179 pdp_warhol;
+#X obj 27 9 inlet;
+#X obj 38 19 inlet;
+#X obj 48 29 inlet;
+#X obj 58 39 inlet;
+#X obj 68 49 inlet;
+#X obj 78 59 inlet;
+#X obj 88 69 inlet;
+#X obj 27 227 outlet;
+#X obj 101 101 cnv 15 100 60 empty empty Warhol 20 30 0 42 -261790
+-203904 0;
+#X floatatom 110 109 3 0 0 0 - - -;
+#X floatatom 148 109 3 0 0 0 - - -;
+#X obj 182 213 hdl 15 1 0 9 empty empty empty 0 -6 0 8 -262144 -1 -1
+0;
+#X floatatom 111 144 3 0 0 0 - - -;
+#X floatatom 135 144 3 0 0 0 - - -;
+#X floatatom 159 144 3 0 0 0 - - -;
+#X text 252 235 Y component;
+#X text 280 255 U component;
+#X text 303 280 V component;
+#X floatatom 111 126 5 0 0 0 - - -;
+#X text 135 111 X;
+#X text 177 146 yuv;
+#X obj 101 152 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 101 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 115 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 130 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 146 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 161 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 176 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 192 100 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X text 150 124 box;
+#X text 173 111 Y;
+#X connect 0 0 8 0;
+#X connect 1 0 0 0;
+#X connect 2 0 10 0;
+#X connect 3 0 11 0;
+#X connect 4 0 12 0;
+#X connect 5 0 13 0;
+#X connect 6 0 14 0;
+#X connect 7 0 15 0;
+#X connect 10 0 0 1;
+#X connect 11 0 0 2;
+#X connect 12 0 19 0;
+#X coords 0 -1 1 1 102 62 1 100 100;
