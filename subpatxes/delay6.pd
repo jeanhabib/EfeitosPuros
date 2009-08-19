@@ -80,4 +80,4 @@
 #X connect 34 0 27 0;
 #X connect 35 0 30 0;
 #X connect 36 0 35 2;
-#X coords 0 -1 1 1 102 62 1 100 100;
+#X coords 0 -1 1 1 102 62 2 100 100;

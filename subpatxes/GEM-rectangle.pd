@@ -1,0 +1,23 @@
+#N canvas 1 27 450 300 10;
+#X obj 101 101 cnv 15 100 60 empty empty Rectangle 20 12 0 34 -15109
+-66577 0;
+#X obj 222 88 cnv 15 150 100 empty empty empty 20 12 0 14 -24198 -66577
+0;
+#X msg 225 95 draw line;
+#X msg 225 116 draw fill;
+#X msg 225 138 draw point;
+#X obj 268 64 gemhead;
+#X floatatom 112 130 5 0 0 2 width - -;
+#X floatatom 147 130 5 0 0 2 height - -;
+#X obj 268 169 rectangle 3 1;
+#X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 207 33 inlet;
+#X connect 2 0 8 0;
+#X connect 3 0 8 0;
+#X connect 4 0 8 0;
+#X connect 5 0 8 0;
+#X connect 6 0 8 1;
+#X connect 7 0 8 2;
+#X connect 10 0 8 0;
+#X coords 0 -1 1 1 102 62 1 100 100;

@@ -1,0 +1,87 @@
+#N canvas 1 27 450 300 10;
+#X obj 100 61 sel 1;
+#X obj 95 159 s click;
+#X obj 66 25 r por_abrir;
+#X obj 83 84 spigot 0;
+#X msg 68 49 1;
+#X obj 82 124 t b b b b;
+#X msg 82 190 0;
+#X msg 170 64 capture \$1;
+#X obj 170 7 tgl 25 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 277 103 bng 18 750 50 0 empty empty banged_on_window_creation
+20 8 1 9 -262144 -1 -1;
+#X obj 241 123 prepend set;
+#X msg 241 142 savetofile purefx2.pd /home/habib/puredeposito/user_patches/habib/EfeitosPuros
+;
+#X obj 241 280 s mouseXY;
+#X obj 158 127 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 380 40 memento-help;
+#N canvas 673 167 450 300 por_abrir 0;
+#X msg 70 77 set \$1;
+#X msg 69 107 plasma;
+#X obj 137 91 r mouseXY;
+#X obj 22 33 r click;
+#X obj 137 112 unpack 0 0;
+#X obj 115 143 pack s 0 0;
+#X obj 212 170 print;
+#X msg 99 196 obj \$2 \$3 ./subpatxes/\$1;
+#X obj 70 54 r por_abrir;
+#X obj 93 231 s pd-purefx.pd;
+#X connect 0 0 1 0;
+#X connect 1 0 5 0;
+#X connect 2 0 4 0;
+#X connect 3 0 1 0;
+#X connect 4 0 5 1;
+#X connect 4 1 5 2;
+#X connect 5 0 6 0;
+#X connect 5 0 7 0;
+#X connect 7 0 9 0;
+#X connect 8 0 0 0;
+#X restore 49 291 pd por_abrir;
+#X obj 233 6 loadbang;
+#X obj 141 246 sel motion;
+#X obj 142 269 print f;
+#X obj 176 186 sel motion;
+#X obj 176 204 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 241 261 pack 0 0;
+#X obj 241 227 spigot;
+#X obj 286 227 spigot;
+#X obj 223 212 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 240 169 unpack s 0 0 0 0;
+#X obj 34 50 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 170 83 tot purefx.pd;
+#X msg 181 33 \; pd-purefx.pd vis \$1;
+#X connect 0 0 3 0;
+#X connect 2 0 4 0;
+#X connect 2 0 26 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 1;
+#X connect 5 0 6 0;
+#X connect 5 1 1 0;
+#X connect 6 0 3 1;
+#X connect 7 0 27 0;
+#X connect 8 0 7 0;
+#X connect 8 0 28 0;
+#X connect 10 0 11 0;
+#X connect 13 0 0 0;
+#X connect 16 0 8 0;
+#X connect 17 0 18 0;
+#X connect 19 0 20 0;
+#X connect 20 0 24 0;
+#X connect 21 0 12 0;
+#X connect 22 0 21 0;
+#X connect 23 0 21 1;
+#X connect 24 0 22 1;
+#X connect 24 0 23 1;
+#X connect 25 0 19 0;
+#X connect 25 1 22 0;
+#X connect 25 2 23 0;
+#X connect 25 3 13 0;
+#X connect 27 2 10 0;
+#X connect 27 2 25 0;
+#X connect 27 3 9 0;
