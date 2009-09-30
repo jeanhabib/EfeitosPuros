@@ -1,4 +1,4 @@
-#N canvas 0 0 450 300 10;
+#N canvas 1 27 450 300 10;
 #X obj 12 190 pdp_cycle;
 #X obj 12 41 inlet;
 #X obj 21 222 outlet;
@@ -34,4 +34,4 @@
 #X connect 7 0 4 0;
 #X connect 8 0 5 0;
 #X connect 9 0 6 0;
-#X coords 0 -1 1 1 102 62 1 100 100;
+#X coords 0 -1 1 1 102 62 2 100 100;

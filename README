@@ -1,0 +1,13 @@
+SOBRE
+
+Este é o pureFX, o nome é um acronimo recursivo que faz alusão aos recursos de efeitos em video no PD organizados no pedaço de software que se apresenta, a versão atual esta em desenvolvimenjto e alguns itens do menu não funcionam...
+
+O mais noiante no momento são os efeitos do Freeframe, que teimam em necessitar de um bang para funcionar.
+
+
+
+
+COMO USAR
+para usar o purefx.pd abra tbm o gui-core.pd
+
+depende de GNU-LINUX, pd-extended, pdvjtools, pdopencv

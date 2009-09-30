@@ -1,15 +1,15 @@
-#N canvas 5 27 1272 711 10;
+#N canvas 7 39 1272 670 10;
 #X obj 63 257 pdp_freeframe;
 #X floatatom 354 57 5 0 0 0 - - -;
 #X obj 22 195 pdp_scale 320 240;
 #X obj 402 32 hradio 15 1 0 44 empty empty empty 0 -6 0 8 -262144 -1
--1 6;
+-1 0;
 #X obj 411 158 hsl 128 15 0 1 0 0 empty vparam3 empty -2 -6 0 8 -262144
--1 -1 6985 1;
+-1 -1 0 1;
 #X obj 551 158 hsl 128 15 0 1 0 0 empty vparam4 empty -2 -6 0 8 -262144
--1 -1 6350 1;
+-1 -1 0 1;
 #X obj 691 158 hsl 128 15 0 1 0 0 empty vparam5 empty -2 -6 0 8 -262144
--1 -1 6985 1;
+-1 -1 0 1;
 #X msg 408 178 param 3 \$1;
 #X msg 548 177 param 4 \$1;
 #X msg 689 177 param 5 \$1;
@@ -25,9 +25,9 @@
 #X obj 413 99 hsl 128 15 0 1 0 0 empty vparam0 empty -2 -6 0 8 -262144
 -1 -1 0 1;
 #X obj 551 99 hsl 128 15 0 1 0 0 empty vparam1 empty -2 -6 0 8 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 692 99 hsl 128 15 0 1 0 0 empty vparam2 empty -2 -6 0 8 -262144
--1 -1 6350 1;
+-1 -1 0 1;
 #X obj 411 221 hsl 128 15 0 1 0 0 empty vparam6 empty -2 -6 0 8 -262144
 -1 -1 0 1;
 #X obj 552 221 hsl 128 15 0 1 0 0 empty vparam7 empty -2 -6 0 8 -262144
@@ -142,8 +142,6 @@
 #X obj 184 340 print type;
 #X obj 22 20 inlet;
 #X obj 28 391 outlet;
-#X obj 324 17 loadbang;
-#X msg 410 46 pluginsdir /usr/lib/FreeFrame/plugins_binary;
 #X obj 101 101 cnv 15 100 60 empty empty ColourWarp 20 30 0 42 -99865
 -203904 0;
 #X obj 157 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
@@ -186,6 +184,8 @@
 -262144 -1 0 1;
 #X obj 339 37 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X msg 410 46 pluginsdir /usr/lib/FreeFrame/;
+#X obj 324 17 tot .;
 #X connect 0 0 44 0;
 #X connect 0 1 12 0;
 #X connect 0 2 14 0;
@@ -216,19 +216,19 @@
 #X connect 29 0 0 0;
 #X connect 30 0 0 0;
 #X connect 43 0 2 0;
-#X connect 45 0 70 0;
-#X connect 46 0 0 0;
-#X connect 58 0 59 0;
-#X connect 59 0 3 0;
-#X connect 60 0 21 0;
-#X connect 61 0 4 0;
-#X connect 62 0 5 0;
-#X connect 64 0 6 0;
-#X connect 65 0 19 0;
-#X connect 66 0 20 0;
-#X connect 67 0 22 0;
-#X connect 68 0 23 0;
-#X connect 69 0 24 0;
-#X connect 70 0 58 0;
-#X connect 70 0 46 0;
+#X connect 56 0 57 0;
+#X connect 57 0 3 0;
+#X connect 58 0 21 0;
+#X connect 59 0 4 0;
+#X connect 60 0 5 0;
+#X connect 62 0 6 0;
+#X connect 63 0 19 0;
+#X connect 64 0 20 0;
+#X connect 65 0 22 0;
+#X connect 66 0 23 0;
+#X connect 67 0 24 0;
+#X connect 68 0 56 0;
+#X connect 68 0 69 0;
+#X connect 69 0 0 0;
+#X connect 70 3 68 0;
 #X coords 0 -1 1 1 102 62 2 100 100;

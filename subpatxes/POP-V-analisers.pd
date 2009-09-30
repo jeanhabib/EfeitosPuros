@@ -1,0 +1,45 @@
+#N canvas 2 54 450 432 10;
+#X obj 101 102 popup 124 25 cyan V-analisers bg-subtract motion-detect
+eyes-detect face-detect body-detect;
+#X obj 178 -2 loadbang;
+#X obj 101 312 s por_abrir;
+#X msg 73 42 name V-analisers;
+#X msg 120 64 options bg-subtract motion-detect eyes-detect face-detect
+body-detect;
+#X msg 178 42 bgcolour cyan;
+#X msg 101 174 symbol bg-subtract;
+#X msg 113 193 symbol motion-detect;
+#X msg 123 213 symbol eyes-detect;
+#X msg 153 273 symbol eyes-detect;
+#X msg 131 234 symbol face-detect;
+#X msg 143 253 symbol body-detect;
+#X obj 101 149 sel 0 1 2 3 4 5;
+#X obj 48 186 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 12 0;
+#X connect 1 0 3 0;
+#X connect 1 0 5 0;
+#X connect 1 0 4 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 6 0 2 0;
+#X connect 6 0 13 0;
+#X connect 7 0 2 0;
+#X connect 7 0 13 0;
+#X connect 8 0 2 0;
+#X connect 8 0 13 0;
+#X connect 9 0 2 0;
+#X connect 9 0 13 0;
+#X connect 10 0 2 0;
+#X connect 10 0 13 0;
+#X connect 11 0 2 0;
+#X connect 11 0 13 0;
+#X connect 12 0 6 0;
+#X connect 12 1 7 0;
+#X connect 12 2 8 0;
+#X connect 12 3 10 0;
+#X connect 12 4 11 0;
+#X connect 12 5 9 0;
+#X connect 13 0 3 0;
+#X coords 0 -1 1 1 125 30 2 100 100;

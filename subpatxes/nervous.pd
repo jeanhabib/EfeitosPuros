@@ -1,4 +1,4 @@
-#N canvas 0 0 450 300 10;
+#N canvas 1 27 450 300 10;
 #X obj 11 154 pdp_nervous;
 #X obj 14 70 inlet;
 #X obj 24 251 outlet;
@@ -17,4 +17,4 @@
 0;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
-#X coords 0 -1 1 1 102 62 1 100 100;
+#X coords 0 -1 1 1 102 62 2 100 100;

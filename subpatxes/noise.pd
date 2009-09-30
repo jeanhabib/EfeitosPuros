@@ -1,4 +1,4 @@
-#N canvas 0 0 450 300 10;
+#N canvas 1 27 450 300 10;
 #N canvas 0 0 450 300 noise 0;
 #X obj 123 219 pdp_noise;
 #X obj 123 170 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
@@ -16,7 +16,7 @@
 #X obj 100 152 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
 0;
 #X obj 44 171 metro 100;
-#X obj 119 134 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 119 134 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 135 134 start;
 #X obj 157 47 inlet;
@@ -47,4 +47,4 @@
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 1;
-#X coords 0 -1 1 1 102 62 1 100 100;
+#X coords 0 -1 1 1 102 62 2 100 100;

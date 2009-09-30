@@ -1,5 +1,4 @@
-#N canvas 0 0 450 300 10;
-#N canvas 0 0 450 300 plasma 0;
+#N canvas 1 27 450 300 10;
 #X obj 101 101 cnv 15 100 60 empty empty Plasma 20 12 0 48 -98944 -228856
 0;
 #X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
@@ -46,12 +45,4 @@ between -1 and 1) when a bang is received;
 #X connect 21 0 15 0;
 #X connect 22 0 4 0;
 #X connect 23 0 22 0;
-#X coords 0 -1 1 1 102 62 1 100 100;
-#X restore 100 100 pd plasma;
-#X obj 100 71 inlet;
-#X obj 190 81 inlet;
-#X obj 111 186 outlet;
-#X connect 0 0 3 0;
-#X connect 1 0 0 0;
-#X connect 2 0 0 1;
-#X coords 0 -1 1 1 102 62 1 100 100;
+#X coords 0 -1 1 1 102 62 2 100 100;

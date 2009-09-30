@@ -1,0 +1,5 @@
+#N canvas 94 127 816 555 10;
+#X obj 48 16 playlist all 400 300 {Helvetica 10 bold} #457782 yellow
+black red;
+#X obj 47 330 videogrid videogrid2 3 5 #F0F0F0 #0F0F0F #F1882B mov:mpg
+60 40 ;

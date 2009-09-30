@@ -1,4 +1,4 @@
-#N canvas 0 0 450 300 10;
+#N canvas 2 54 450 300 10;
 #X obj 10 190 pdp_ascii;
 #X obj 10 122 inlet;
 #X obj 101 101 cnv 15 100 60 empty empty ASCii 20 30 0 42 -204786 -203904
@@ -30,4 +30,4 @@
 #X connect 9 0 0 0;
 #X connect 10 0 9 0;
 #X connect 11 0 0 1;
-#X coords 0 -1 1 1 102 62 1 100 100;
+#X coords 0 -1 1 1 102 62 2 100 100;

@@ -1,0 +1,36 @@
+#N canvas 5 135 450 300 10;
+#X obj 101 102 popup 124 25 orange Analisers bonk filterbank fiddle
+snapshot;
+#X obj 178 18 loadbang;
+#X obj 101 262 s por_abrir;
+#X msg 200 84 options bonk filterbank fiddle snapshot;
+#X msg 84 63 name Analisers;
+#X msg 101 174 symbol bonk;
+#X msg 113 193 symbol filterbank;
+#X msg 123 213 symbol fiddle;
+#X msg 133 233 symbol snapshot;
+#X obj 101 149 sel 0 1 2 3;
+#X msg 178 62 bgcolour orange;
+#X obj 50 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 9 0;
+#X connect 1 0 4 0;
+#X connect 1 0 10 0;
+#X connect 1 0 3 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 2 0;
+#X connect 5 0 11 0;
+#X connect 6 0 2 0;
+#X connect 6 0 11 0;
+#X connect 7 0 2 0;
+#X connect 7 0 11 0;
+#X connect 8 0 2 0;
+#X connect 8 0 11 0;
+#X connect 9 0 5 0;
+#X connect 9 1 6 0;
+#X connect 9 2 7 0;
+#X connect 9 3 8 0;
+#X connect 10 0 0 0;
+#X connect 11 0 4 0;
+#X coords 0 -1 1 1 125 30 2 100 100;
