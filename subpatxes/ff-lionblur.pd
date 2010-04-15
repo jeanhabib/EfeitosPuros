@@ -1,4 +1,4 @@
-#N canvas 7 42 1272 714 10;
+#N canvas 0 0 1018 506 10;
 #X obj 63 257 pdp_freeframe;
 #X floatatom 354 57 5 0 0 0 - - -;
 #X obj 22 195 pdp_scale 320 240;
@@ -142,7 +142,6 @@
 #X obj 184 340 print type;
 #X obj 22 20 inlet;
 #X obj 28 391 outlet;
-#X msg 410 46 pluginsdir /usr/lib/FreeFrame/plugins_binary;
 #X obj 101 101 cnv 15 100 60 empty empty LionBlur 5 60 0 28 -1 -203904
 0;
 #X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
@@ -150,7 +149,7 @@
 #X obj 101 151 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
 0;
 #X obj 250 34 delay 500;
-#X obj 340 31 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 349 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 191 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
 0;
@@ -220,7 +219,8 @@
 #X msg 549 487 param 19 \$1;
 #X msg 691 487 param 20 \$1;
 #X msg 300 55 19;
-#X obj 332 8 loadbang;
+#X msg 410 46 pluginsdir /usr/lib/FreeFrame/;
+#X obj 332 8 initbang;
 #X connect 0 0 44 0;
 #X connect 0 1 12 0;
 #X connect 0 2 14 0;
@@ -251,26 +251,26 @@
 #X connect 29 0 0 0;
 #X connect 30 0 0 0;
 #X connect 43 0 2 0;
-#X connect 45 0 0 0;
+#X connect 48 0 100 0;
 #X connect 49 0 101 0;
-#X connect 50 0 45 0;
-#X connect 50 0 49 0;
-#X connect 52 0 64 0;
-#X connect 61 0 63 0;
-#X connect 63 0 20 0;
-#X connect 64 0 19 0;
+#X connect 49 0 48 0;
+#X connect 51 0 63 0;
+#X connect 60 0 62 0;
+#X connect 62 0 20 0;
+#X connect 63 0 19 0;
+#X connect 64 0 91 0;
 #X connect 65 0 92 0;
 #X connect 66 0 93 0;
-#X connect 67 0 94 0;
+#X connect 67 0 88 0;
 #X connect 68 0 89 0;
 #X connect 69 0 90 0;
-#X connect 70 0 91 0;
+#X connect 70 0 94 0;
 #X connect 71 0 95 0;
 #X connect 72 0 96 0;
-#X connect 73 0 97 0;
+#X connect 82 0 97 0;
 #X connect 83 0 98 0;
 #X connect 84 0 99 0;
-#X connect 85 0 100 0;
-#X connect 101 0 3 0;
-#X connect 102 0 50 0;
+#X connect 100 0 3 0;
+#X connect 101 0 0 0;
+#X connect 102 0 49 0;
 #X coords 0 -1 1 1 102 62 2 100 100;

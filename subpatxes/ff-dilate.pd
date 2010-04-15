@@ -1,11 +1,11 @@
-#N canvas 7 27 1272 675 10;
+#N canvas 0 0 1018 506 10;
 #X obj 63 257 pdp_freeframe;
 #X floatatom 354 57 5 0 0 0 - - -;
 #X obj 22 195 pdp_scale 320 240;
 #X obj 402 32 hradio 15 1 0 44 empty empty empty 0 -6 0 8 -262144 -1
 -1 8;
 #X obj 411 158 hsl 128 15 0 1 0 0 empty vparam3 empty -2 -6 0 8 -262144
--1 -1 0 1;
+-1 -1 12700 1;
 #X obj 551 158 hsl 128 15 0 1 0 0 empty vparam4 empty -2 -6 0 8 -262144
 -1 -1 0 1;
 #X obj 691 158 hsl 128 15 0 1 0 0 empty vparam5 empty -2 -6 0 8 -262144
@@ -23,11 +23,11 @@
 #X text 261 340 <-- parameter type;
 #X text 277 311 <-- parameter default;
 #X obj 413 99 hsl 128 15 0 1 0 0 empty vparam0 empty -2 -6 0 8 -262144
--1 -1 0 1;
+-1 -1 6249 1;
 #X obj 551 99 hsl 128 15 0 1 0 0 empty vparam1 empty -2 -6 0 8 -262144
--1 -1 0 1;
+-1 -1 11490 1;
 #X obj 692 99 hsl 128 15 0 1 0 0 empty vparam2 empty -2 -6 0 8 -262144
--1 -1 0 1;
+-1 -1 12700 1;
 #X obj 411 221 hsl 128 15 0 1 0 0 empty vparam6 empty -2 -6 0 8 -262144
 -1 -1 0 1;
 #X obj 552 221 hsl 128 15 0 1 0 0 empty vparam7 empty -2 -6 0 8 -262144
@@ -142,7 +142,6 @@
 #X obj 184 340 print type;
 #X obj 22 20 inlet;
 #X obj 28 391 outlet;
-#X obj 301 8 loadbang;
 #X obj 101 101 cnv 15 100 60 empty empty ffDilate 20 15 0 34 -1 -203904
 0;
 #X obj 157 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
@@ -160,9 +159,7 @@
 #X obj 65 21 inlet;
 #X obj 105 21 inlet;
 #X obj 110 116 hsl 64 8 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X obj 110 128 hsl 64 8 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 3100 1;
 #X obj 101 151 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
 0;
 #X obj 119 141 cnv 15 20 20 empty empty empty 20 12 0 14 -258113 -66577
@@ -172,9 +169,9 @@
 #X obj 161 141 cnv 15 20 20 empty empty empty 20 12 0 14 -4160 -66577
 0;
 #X obj 121 143 knob 16 16 0 1 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 0 1;
+-1 -1 1500 1;
 #X obj 141 143 knob 16 16 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 0 1;
+-1 -1 1500 1;
 #X obj 163 143 knob 16 16 0 127 0 0 empty empty empty 0 -8 0 8 -262144
 -1 -1 0 1;
 #X obj 144 22 inlet;
@@ -184,6 +181,7 @@
 -1;
 #X msg 300 55 8;
 #X msg 410 46 pluginsdir /usr/lib/FreeFrame/;
+#X obj 301 8 initbang;
 #X connect 0 0 44 0;
 #X connect 0 1 12 0;
 #X connect 0 2 14 0;
@@ -214,17 +212,15 @@
 #X connect 29 0 0 0;
 #X connect 30 0 0 0;
 #X connect 43 0 2 0;
-#X connect 45 0 67 0;
-#X connect 53 0 55 0;
-#X connect 54 0 56 0;
-#X connect 55 0 19 0;
-#X connect 56 0 20 0;
-#X connect 61 0 21 0;
-#X connect 62 0 4 0;
-#X connect 63 0 5 0;
-#X connect 66 0 68 0;
-#X connect 67 0 69 0;
-#X connect 67 0 66 0;
-#X connect 68 0 3 0;
-#X connect 69 0 0 0;
+#X connect 52 0 54 0;
+#X connect 54 0 19 0;
+#X connect 59 0 21 0;
+#X connect 60 0 4 0;
+#X connect 61 0 5 0;
+#X connect 64 0 66 0;
+#X connect 65 0 67 0;
+#X connect 65 0 64 0;
+#X connect 66 0 3 0;
+#X connect 67 0 0 0;
+#X connect 68 0 65 0;
 #X coords 0 -1 1 1 102 62 2 100 100;

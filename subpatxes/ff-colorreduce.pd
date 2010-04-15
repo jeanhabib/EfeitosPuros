@@ -1,4 +1,4 @@
-#N canvas 1 31 1278 678 10;
+#N canvas 0 0 1018 506 10;
 #X obj 63 257 pdp_freeframe;
 #X floatatom 354 57 5 0 0 0 - - -;
 #X obj 22 195 pdp_scale 320 240;
@@ -168,7 +168,7 @@
 #X msg 300 55 5;
 #X obj 277 78 delay 500;
 #X msg 410 46 pluginsdir /usr/lib/FreeFrame/;
-#X obj 303 22 tot .;
+#X obj 312 19 initbang;
 #X connect 0 0 44 0;
 #X connect 0 1 12 0;
 #X connect 0 2 14 0;
@@ -210,5 +210,5 @@
 #X connect 58 0 60 0;
 #X connect 59 0 58 0;
 #X connect 60 0 0 0;
-#X connect 61 3 57 0;
+#X connect 61 0 57 0;
 #X coords 0 -1 1 1 102 62 2 100 100;

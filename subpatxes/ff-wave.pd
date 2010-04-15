@@ -142,7 +142,7 @@
 #X obj 184 340 print type;
 #X obj 22 20 inlet;
 #X obj 28 391 outlet;
-#X obj 301 8 loadbang;
+#X obj 301 8 initbang;
 #X msg 410 46 pluginsdir /usr/lib/FreeFrame/plugins_binary;
 #X obj 101 101 cnv 15 100 60 empty empty Wave 5 50 0 28 -1 -203904
 0;

@@ -1,11 +1,11 @@
-#N canvas 467 27 1272 714 10;
+#N canvas 0 0 1018 506 10;
 #X obj 63 257 pdp_freeframe;
 #X floatatom 354 57 5 0 0 0 - - -;
 #X obj 22 195 pdp_scale 320 240;
 #X obj 402 32 hradio 15 1 0 44 empty empty empty 0 -6 0 8 -262144 -1
--1 16;
+-1 0;
 #X obj 411 158 hsl 128 15 0 1 0 0 empty vparam3 empty -2 -6 0 8 -262144
--1 -1 6375 1;
+-1 -1 0 1;
 #X obj 551 158 hsl 128 15 0 1 0 0 empty vparam4 empty -2 -6 0 8 -262144
 -1 -1 0 1;
 #X obj 691 158 hsl 128 15 0 1 0 0 empty vparam5 empty -2 -6 0 8 -262144
@@ -23,7 +23,7 @@
 #X text 261 340 <-- parameter type;
 #X text 277 311 <-- parameter default;
 #X obj 413 99 hsl 128 15 0 1 0 0 empty vparam0 empty -2 -6 0 8 -262144
--1 -1 2963 1;
+-1 -1 0 1;
 #X obj 551 99 hsl 128 15 0 1 0 0 empty vparam1 empty -2 -6 0 8 -262144
 -1 -1 0 1;
 #X obj 692 99 hsl 128 15 0 1 0 0 empty vparam2 empty -2 -6 0 8 -262144
@@ -142,8 +142,6 @@
 #X obj 184 340 print type;
 #X obj 22 20 inlet;
 #X obj 28 391 outlet;
-#X obj 301 8 loadbang;
-#X msg 410 46 pluginsdir /usr/lib/FreeFrame/plugins_binary;
 #X obj 101 101 cnv 15 100 60 empty empty HalfTone 5 60 0 28 -1 -203904
 0;
 #X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
@@ -173,12 +171,9 @@
 #X obj 187 109 vsl 8 44 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 112 30 inlet;
-#X obj 132 40 inlet;
-#X obj 152 50 inlet;
-#X obj 172 60 inlet;
-#X obj 186 30 inlet;
-#X obj 206 40 inlet;
 #X msg 300 55 16;
+#X msg 410 46 pluginsdir /usr/lib/FreeFrame/;
+#X obj 301 8 initbang;
 #X connect 0 0 44 0;
 #X connect 0 1 12 0;
 #X connect 0 2 14 0;
@@ -209,18 +204,18 @@
 #X connect 29 0 0 0;
 #X connect 30 0 0 0;
 #X connect 43 0 2 0;
-#X connect 45 0 51 0;
-#X connect 46 0 0 0;
-#X connect 50 0 69 0;
-#X connect 51 0 46 0;
-#X connect 51 0 50 0;
+#X connect 48 0 62 0;
+#X connect 49 0 63 0;
+#X connect 49 0 48 0;
+#X connect 53 0 57 0;
+#X connect 54 0 58 0;
 #X connect 55 0 59 0;
-#X connect 56 0 60 0;
-#X connect 57 0 61 0;
-#X connect 59 0 19 0;
-#X connect 60 0 20 0;
-#X connect 61 0 21 0;
-#X connect 62 0 4 0;
-#X connect 63 0 62 0;
-#X connect 69 0 3 0;
+#X connect 57 0 19 0;
+#X connect 58 0 20 0;
+#X connect 59 0 21 0;
+#X connect 60 0 4 0;
+#X connect 61 0 60 0;
+#X connect 62 0 3 0;
+#X connect 63 0 0 0;
+#X connect 64 0 49 0;
 #X coords 0 -1 1 1 102 62 2 100 100;
