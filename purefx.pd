@@ -1,12 +1,13 @@
-#N canvas 6 51 1257 649 10;
+#N canvas 0 133 1249 649 10;
 #X obj 1 0 cnv 15 1280 800 empty empty empty 20 12 0 14 -577 -66577
 0;
-#X obj 10 10 ./subpatxes/POP-sources;
-#X obj 140 10 ./subpatxes/POP-effecTV;
-#X obj 270 10 ./subpatxes/POP-freeframe;
-#X obj 400 10 ./subpatxes/POP-videoOUTs;
-#X obj 530 10 ./subpatxes/POP-analisers;
-#X obj 660 10 ./subpatxes/POP-V-analisers;
-#X obj 790 10 ./subpatxes/POP-bridges;
-#X obj 920 10 ./subpatxes/POP-GL;
-#X obj 1050 10 ./subpatxes/POP-pix;
+#X obj 10 5 ./subpatxes/POP-sources;
+#X obj 10 35 ./subpatxes/POP-effecTV;
+#X obj 10 70 ./subpatxes/POP-freeframe;
+#X obj 10 105 ./subpatxes/POP-videoOUTs;
+#X obj 10 135 ./subpatxes/POP-analisers;
+#X obj 10 165 ./subpatxes/POP-V-analisers;
+#X obj 10 195 ./subpatxes/POP-bridges;
+#X obj 10 225 ./subpatxes/POP-GL;
+#X obj 10 255 ./subpatxes/POP-pix;
+#X obj 10 285 ./subpatxes/POP-mixers;
