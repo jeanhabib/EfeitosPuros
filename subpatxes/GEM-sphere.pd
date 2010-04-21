@@ -1,0 +1,26 @@
+#N canvas 88 187 450 300 10;
+#X obj 101 101 cnv 15 100 60 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X msg 235 65 draw line;
+#X msg 235 96 draw fill;
+#X msg 235 128 draw point;
+#X obj 303 64 gemhead;
+#X floatatom 130 104 5 0 0 0 - - -;
+#X text 168 103 size;
+#X floatatom 128 134 3 0 0 0 - - -;
+#X text 149 133 segments;
+#X obj 101 178 sphere;
+#X obj 133 214 outlet;
+#X obj 101 151 cnv 10 10 10 empty empty empty 20 12 0 14 -1 -66577
+0;
+#X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -258113 -66577
+0;
+#X obj 101 42 inlet;
+#X connect 1 0 9 0;
+#X connect 2 0 9 0;
+#X connect 3 0 9 0;
+#X connect 4 0 9 0;
+#X connect 5 0 9 1;
+#X connect 7 0 9 2;
+#X connect 13 0 9 0;
+#X coords 0 -1 1 1 102 62 2 100 100;

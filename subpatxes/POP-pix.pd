@@ -1,5 +1,5 @@
 #N canvas 1 27 450 300 10;
-#X obj 101 102 popup 124 25 deeppink pix pdp2gem gem2pdp gem2#;
+#X obj 101 102 popup 124 25 deeppink pix filminho imagem CamDV;
 #X obj 29 246 s por_abrir;
 #X obj 137 18 loadbang;
 #X obj 101 130 sel 0 1 2 3 4 5 6;
@@ -9,15 +9,15 @@
 #X msg 181 50 bgcolour deeppink;
 #X msg 167 84 options filminho imagem CamDV;
 #X msg 101 151 symbol filminho;
-#X msg 114 171 symbol imagem;
 #X msg 128 191 symbol DV;
+#X msg 114 171 symbol GEM-pix_image;
 #X connect 0 0 3 0;
 #X connect 2 0 5 0;
 #X connect 2 0 7 0;
 #X connect 2 0 6 0;
 #X connect 3 0 8 0;
-#X connect 3 1 9 0;
-#X connect 3 2 10 0;
+#X connect 3 1 10 0;
+#X connect 3 2 9 0;
 #X connect 4 0 5 0;
 #X connect 5 0 0 0;
 #X connect 6 0 0 0;

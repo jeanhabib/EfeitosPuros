@@ -1,0 +1,46 @@
+#N canvas 206 244 450 300 10;
+#X obj 101 101 cnv 15 100 60 empty empty empty 20 12 0 14 -55702 -66577
+0;
+#N canvas 0 0 450 300 gemwin 1;
+#X obj 132 136 gemwin;
+#X obj 67 89 outlet;
+#X obj 67 10 inlet;
+#X obj 67 41 route create;
+#X msg 67 70 set destroy;
+#X msg 142 68 set create;
+#X msg 198 112 destroy;
+#X msg 132 112 create \, 1;
+#X obj 258 49 inlet;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 7 0;
+#X connect 3 1 5 0;
+#X connect 3 1 6 0;
+#X connect 4 0 1 0;
+#X connect 5 0 1 0;
+#X connect 6 0 0 0;
+#X connect 7 0 0 0;
+#X connect 8 0 0 0;
+#X restore 109 217 pd gemwin;
+#X msg 109 198 destroy;
+#X obj 110 120 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 124 103 Cria Janela;
+#X obj 140 123 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 1
+1;
+#X text 162 122 R;
+#X msg 197 194 dimen 320 240;
+#X obj 148 139 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 163 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 207 204 dimen 640 480;
+#X connect 1 0 2 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 5 0 1 1;
+#X connect 7 0 1 1;
+#X connect 8 0 7 0;
+#X connect 9 0 10 0;
+#X connect 10 0 1 1;
+#X coords 0 -1 1 1 102 62 2 100 100;

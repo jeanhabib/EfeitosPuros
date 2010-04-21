@@ -1,4 +1,4 @@
-#N canvas 0 133 1249 649 10;
+#N canvas 0 0 1005 506 10;
 #X obj 1 0 cnv 15 1280 800 empty empty empty 20 12 0 14 -577 -66577
 0;
 #X obj 10 5 ./subpatxes/POP-sources;
@@ -11,3 +11,4 @@
 #X obj 10 225 ./subpatxes/POP-GL;
 #X obj 10 255 ./subpatxes/POP-pix;
 #X obj 10 285 ./subpatxes/POP-mixers;
+#X obj 511 28 pix_freeframe GlowVFX;
