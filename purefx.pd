@@ -11,4 +11,6 @@
 #X obj 10 225 ./subpatxes/POP-GL;
 #X obj 10 255 ./subpatxes/POP-pix;
 #X obj 10 285 ./subpatxes/POP-mixers;
-#X obj 511 28 pix_freeframe GlowVFX;
+#X obj 10 315 ./subpatxes/POP-GEM-head;
+#X obj 213 83 ./subpatxes/GEM-head;
+#X obj 398 64 ./subpatxes/GEM-win;

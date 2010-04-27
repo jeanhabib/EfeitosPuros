@@ -12,14 +12,14 @@
 #X obj 257 123 bng 18 750 50 0 empty empty banged_on_window_creation
 20 8 1 9 -262144 -1 -1;
 #X obj 221 143 prepend set;
-#X msg 221 162 menuclose 0;
+#X msg 221 162 motion 182 215 0;
 #X obj 221 300 s mouseXY;
 #X obj 138 147 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-2;
+364;
 #X obj 360 60 memento-help;
-#N canvas 640 69 450 519 por_abrir 1;
+#N canvas 555 25 450 506 por_abrir 1;
 #X msg 47 77 set \$1;
-#X msg 37 107 ff-dilate;
+#X msg 37 107 GEM-torus;
 #X obj 105 91 r mouseXY;
 #X obj 22 33 r click;
 #X obj 105 112 unpack 0 0;
@@ -33,8 +33,8 @@
 #X msg 227 72 symbol POP-effecTV;
 #X msg 237 124 symbol POP-freeframe;
 #X msg 249 173 symbol POP-videoOUTs;
-#X obj 138 14 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 160 453 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X msg 257 224 symbol POP-analisers;
 #X msg 277 324 symbol POP-bridges;
 #X msg 267 274 symbol POP-V-analisers;
@@ -51,6 +51,8 @@
 #X msg 287 396 obj 10 225 ./subpatxes/\$1;
 #X msg 297 446 obj 10 255 ./subpatxes/\$1;
 #X msg 307 496 obj 10 285 ./subpatxes/\$1;
+#X msg 327 524 symbol POP-GEM-head;
+#X msg 326 546 obj 10 315 ./subpatxes/\$1;
 #X connect 0 0 1 0;
 #X connect 1 0 5 0;
 #X connect 2 0 4 0;
@@ -75,6 +77,7 @@
 #X connect 15 0 19 0;
 #X connect 15 0 20 0;
 #X connect 15 0 21 0;
+#X connect 15 0 32 0;
 #X connect 16 0 26 0;
 #X connect 17 0 28 0;
 #X connect 18 0 27 0;
@@ -91,6 +94,8 @@
 #X connect 29 0 10 0;
 #X connect 30 0 10 0;
 #X connect 31 0 10 0;
+#X connect 32 0 33 0;
+#X connect 33 0 10 0;
 #X restore 29 311 pd por_abrir;
 #X obj 213 26 loadbang;
 #X obj 121 266 sel motion;

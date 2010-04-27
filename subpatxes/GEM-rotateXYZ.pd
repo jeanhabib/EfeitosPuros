@@ -1,0 +1,29 @@
+#N canvas 0 0 450 300 10;
+#X obj 101 101 cnv 15 100 60 empty empty empty 20 12 0 14 -24198 -66577
+0;
+#X floatatom 110 110 5 0 0 1 X[deg] - -;
+#X obj 79 173 rotateXYZ 45 0 0;
+#X floatatom 120 127 5 0 0 1 Y[deg] - -;
+#X floatatom 134 144 5 0 0 1 Z[deg] - -;
+#X obj 79 235 outlet;
+#X obj 101 152 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 110 64 inlet;
+#X obj 152 64 inlet;
+#X obj 195 64 inlet;
+#X obj 148 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 191 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 68 37 gemhead 50;
+#X connect 1 0 2 1;
+#X connect 2 0 5 0;
+#X connect 3 0 2 2;
+#X connect 4 0 2 3;
+#X connect 8 0 1 0;
+#X connect 9 0 3 0;
+#X connect 10 0 4 0;
+#X connect 13 0 2 0;
+#X coords 0 -1 1 1 102 62 2 100 100;

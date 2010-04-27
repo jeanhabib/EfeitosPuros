@@ -1,0 +1,45 @@
+#N canvas 119 126 450 300 10;
+#X obj 221 28 cnv 15 155 250 empty empty empty 20 12 0 14 -24198 -66577
+0;
+#X obj 246 227 unpack 0 0 0;
+#X floatatom 236 250 5 0 0 3 length - -;
+#X floatatom 285 250 5 0 0 3 width - -;
+#X floatatom 335 250 5 0 0 3 height - -;
+#X obj 290 208 bng 15 250 50 0 empty empty end_reached 20 7 0 10 -262144
+-1 -1;
+#X floatatom 272 173 5 0 10000 1 frame# - -;
+#X obj 233 62 openpanel;
+#X msg 233 82 open \$1;
+#X obj 221 191 pix_film;
+#X msg 239 125 auto \$1;
+#X msg 250 149 colorspace Grey;
+#X obj 101 101 cnv 15 100 60 empty empty empty 20 12 0 14 -4034 -66577
+0;
+#X obj 101 151 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 125 105 bng 25 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 127 140 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 128 39 inlet;
+#X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X text 149 122 filminho;
+#X obj 50 240 outlet;
+#X obj 104 229 pix_texture;
+#X connect 1 0 2 0;
+#X connect 1 1 3 0;
+#X connect 1 2 4 0;
+#X connect 6 0 9 1;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 20 0;
+#X connect 9 1 1 0;
+#X connect 9 2 5 0;
+#X connect 10 0 9 0;
+#X connect 11 0 9 0;
+#X connect 14 0 7 0;
+#X connect 15 0 10 0;
+#X connect 16 0 9 0;
+#X connect 20 0 19 0;
+#X coords 0 -1 1 1 102 62 2 100 100;
