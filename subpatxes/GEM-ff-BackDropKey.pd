@@ -1,0 +1,34 @@
+#N canvas 0 0 450 300 10;
+#X obj 99 51 pix_rgba;
+#X obj 99 73 pix_BackDropKeyVFX;
+#X obj 101 101 cnv 15 100 60 empty empty empty 20 12 0 14 -4160 -66577
+0;
+#X obj 99 31 inlet;
+#X obj 101 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 191 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 141 101 cnv 10 10 10 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 159 31 inlet;
+#X obj 209 31 inlet;
+#X obj 115 124 hsl 48 8 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 167 122 5 0 0 0 - - -;
+#X obj 115 144 hsl 48 8 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 167 142 5 0 0 0 - - -;
+#X obj 98 176 pix_texture;
+#X obj 98 217 outlet;
+#X text 114 105 bgDropKey;
+#X connect 0 0 1 0;
+#X connect 1 0 13 0;
+#X connect 3 0 0 0;
+#X connect 7 0 9 0;
+#X connect 8 0 11 0;
+#X connect 9 0 10 0;
+#X connect 10 0 1 1;
+#X connect 11 0 12 0;
+#X connect 12 0 1 2;
+#X connect 13 0 14 0;
+#X coords 0 -1 1 1 102 62 2 100 100;

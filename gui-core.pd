@@ -12,14 +12,14 @@
 #X obj 257 123 bng 18 750 50 0 empty empty banged_on_window_creation
 20 8 1 9 -262144 -1 -1;
 #X obj 221 143 prepend set;
-#X msg 221 162 motion 182 215 0;
+#X msg 221 162 key 1 Alt_L 0;
 #X obj 221 300 s mouseXY;
 #X obj 138 147 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-364;
+402;
 #X obj 360 60 memento-help;
-#N canvas 555 25 450 506 por_abrir 1;
+#N canvas 568 25 437 493 por_abrir 0;
 #X msg 47 77 set \$1;
-#X msg 37 107 GEM-torus;
+#X msg 37 107 GEM-ff-BackDropKey;
 #X obj 105 91 r mouseXY;
 #X obj 22 33 r click;
 #X obj 105 112 unpack 0 0;
@@ -33,17 +33,14 @@
 #X msg 227 72 symbol POP-effecTV;
 #X msg 237 124 symbol POP-freeframe;
 #X msg 249 173 symbol POP-videoOUTs;
-#X obj 160 453 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 25 337 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X msg 257 224 symbol POP-analisers;
 #X msg 277 324 symbol POP-bridges;
 #X msg 267 274 symbol POP-V-analisers;
 #X msg 287 374 symbol POP-GL;
 #X msg 297 424 symbol POP-pix;
 #X msg 307 474 symbol POP-mixers;
-#X msg 201 45 obj 10 5 ./subpatxes/\$1;
-#X msg 227 96 obj 10 35 ./subpatxes/\$1;
-#X msg 237 146 obj 10 70 ./subpatxes/\$1;
 #X msg 249 196 obj 10 105 ./subpatxes/\$1;
 #X msg 257 246 obj 10 135 ./subpatxes/\$1;
 #X msg 267 296 obj 10 165 ./subpatxes/\$1;
@@ -53,6 +50,13 @@
 #X msg 307 496 obj 10 285 ./subpatxes/\$1;
 #X msg 327 524 symbol POP-GEM-head;
 #X msg 326 546 obj 10 315 ./subpatxes/\$1;
+#X msg 347 574 symbol POP-GEM-pix_freeframe;
+#X msg 346 596 obj 10 345 ./subpatxes/\$1;
+#X msg 366 646 obj 10 375 ./subpatxes/\$1;
+#X msg 367 624 symbol POP-interface;
+#X msg 237 146 obj 10 75 ./subpatxes/\$1;
+#X msg 227 96 obj 10 45 ./subpatxes/\$1;
+#X msg 201 45 obj 10 15 ./subpatxes/\$1;
 #X connect 0 0 1 0;
 #X connect 1 0 5 0;
 #X connect 2 0 4 0;
@@ -63,10 +67,10 @@
 #X connect 5 0 7 0;
 #X connect 7 0 9 0;
 #X connect 8 0 0 0;
-#X connect 11 0 22 0;
-#X connect 12 0 23 0;
-#X connect 13 0 24 0;
-#X connect 14 0 25 0;
+#X connect 11 0 37 0;
+#X connect 12 0 36 0;
+#X connect 13 0 35 0;
+#X connect 14 0 22 0;
 #X connect 15 0 11 0;
 #X connect 15 0 12 0;
 #X connect 15 0 13 0;
@@ -77,13 +81,15 @@
 #X connect 15 0 19 0;
 #X connect 15 0 20 0;
 #X connect 15 0 21 0;
-#X connect 15 0 32 0;
-#X connect 16 0 26 0;
-#X connect 17 0 28 0;
-#X connect 18 0 27 0;
-#X connect 19 0 29 0;
-#X connect 20 0 30 0;
-#X connect 21 0 31 0;
+#X connect 15 0 29 0;
+#X connect 15 0 31 0;
+#X connect 15 0 34 0;
+#X connect 16 0 23 0;
+#X connect 17 0 25 0;
+#X connect 18 0 24 0;
+#X connect 19 0 26 0;
+#X connect 20 0 27 0;
+#X connect 21 0 28 0;
 #X connect 22 0 10 0;
 #X connect 23 0 10 0;
 #X connect 24 0 10 0;
@@ -91,11 +97,15 @@
 #X connect 26 0 10 0;
 #X connect 27 0 10 0;
 #X connect 28 0 10 0;
-#X connect 29 0 10 0;
+#X connect 29 0 30 0;
 #X connect 30 0 10 0;
-#X connect 31 0 10 0;
-#X connect 32 0 33 0;
+#X connect 31 0 32 0;
+#X connect 32 0 10 0;
 #X connect 33 0 10 0;
+#X connect 34 0 33 0;
+#X connect 35 0 10 0;
+#X connect 36 0 10 0;
+#X connect 37 0 10 0;
 #X restore 29 311 pd por_abrir;
 #X obj 213 26 loadbang;
 #X obj 121 266 sel motion;
@@ -106,7 +116,7 @@
 #X obj 221 281 pack 0 0;
 #X obj 221 247 spigot;
 #X obj 266 247 spigot;
-#X obj 203 232 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 203 232 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 220 189 unpack s 0 0 0 0;
 #X obj 14 70 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
